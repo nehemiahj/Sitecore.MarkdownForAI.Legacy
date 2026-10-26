@@ -1,0 +1,24 @@
+# Example Pet Health Library
+
+> Veterinarian-reviewed articles on dog and cat health, nutrition, behavior and senior care, written for pet owners. General information only; it does not replace an examination by a veterinarian.
+
+Each link points to the Markdown version of a page. Append `.md` to any page URL on this site to get its Markdown version.
+
+## Cats: Kidney and urinary
+
+- [Chronic Kidney Disease in Cats: Care and Diet Guidelines](https://www.example.org/pet-health/feline-chronic-kidney-disease.md): Stages, kidney diets, hydration and home care for cats with chronic kidney disease (CKD).
+- [Urinary Blockage in Male Cats](https://www.example.org/pet-health/urethral-obstruction-cats.md): Why a cat straining in the litter box without passing urine is an emergency.
+
+## Cats and dogs: Toxins and poisoning
+
+- [Lily Poisoning in Cats](https://www.example.org/pet-health/lily-toxicity-cats.md): Which lilies are dangerous, signs of kidney failure and what to do immediately.
+- [Antifreeze Poisoning](https://www.example.org/pet-health/ethylene-glycol-toxicity.md): How ethylene glycol harms dogs and cats and why treatment must start within hours.
+
+## Nutrition
+
+- [Reading a Pet Food Label](https://www.example.org/pet-health/pet-food-labels.md): What guaranteed analysis, AAFCO statements and ingredient order tell you.
+
+## Optional
+
+- [Find a Hospital](https://www.example.org/find-a-hospital.md): Locations and opening hours.
+- [Careers](https://www.example.org/careers.md): Veterinary and support roles.

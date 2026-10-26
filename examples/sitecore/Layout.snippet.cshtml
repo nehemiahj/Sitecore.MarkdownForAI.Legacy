@@ -1,0 +1,14 @@
+@* Snippets for an MVC layout or article view. *@
+@using Sitecore.MarkdownForAI.Html
+
+@* In <head>: lets agents and the web component find the Markdown version. *@
+@Html.MarkdownAlternateLink()
+
+@* Near the article title: the button for human visitors. *@
+@* The ask-ai web component from Sitecore.MarkdownForAI (js/ask-ai), copied to /scripts/markdownforai/.
+   Without <ask-ai-provider> children it offers ChatGPT, Claude and Perplexity. *@
+<script type="module" src="/scripts/markdownforai/ask-ai.js"></script>
+<ask-ai target=".article-body" data-md-ignore></ask-ai>
+
+@* Anything that should never reach the Markdown, inside a component that otherwise should. *@
+<div class="share-buttons" data-md-ignore>...</div>

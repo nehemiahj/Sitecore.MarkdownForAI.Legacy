@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Sitecore.MarkdownForAI.Legacy: YOUR settings.
+
+  Rename this file to z.MarkdownForAI.Site.config (drop ".example") and change the values below.
+  Keep your changes here, not in Sitecore.MarkdownForAI.config: upgrades replace that file and leave
+  this one alone. The "z." prefix makes it load after the module's files in this folder.
+
+  Every setting in Sitecore.MarkdownForAI.config can be changed here the same way
+  (patch:attribute, which works on every release from 8.0). Check the result in
+  /sitecore/admin/showconfig.aspx.
+-->
+<configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
+  <sitecore>
+    <settings>
+      <!-- Sites that answer Markdown requests (names from <sites>), pipe separated. "*" = every site
+           except Sitecore system sites. -->
+      <setting name="MarkdownForAI.Sites">
+        <patch:attribute name="value">website</patch:attribute>
+      </setting>
+
+      <!-- Placeholders whose renderings never appear in the Markdown, at any depth: usually the header,
+           navigation and footer placeholders of your layouts. -->
+      <setting name="MarkdownForAI.ExcludedPlaceholders">
+        <patch:attribute name="value">header|footer|navigation|nav|breadcrumb</patch:attribute>
+      </setting>
+
+      <!-- include = every rendering is converted unless excluded.
+           exclude = only renderings marked md=include (or listed below) are converted: use this when only
+           some components, such as an article body, belong in the Markdown. -->
+      <setting name="MarkdownForAI.DefaultMode">
+        <patch:attribute name="value">include</patch:attribute>
+      </setting>
+
+      <!-- Rendering definition item IDs, pipe separated. -->
+      <setting name="MarkdownForAI.ExcludedRenderings">
+        <patch:attribute name="value"></patch:attribute>
+      </setting>
+      <setting name="MarkdownForAI.IncludedRenderings">
+        <patch:attribute name="value"></patch:attribute>
+      </setting>
+    </settings>
+
+    <!-- Optional: build Markdown for a template straight from its fields, without rendering the page.
+    <markdownForAI>
+      <sourceList>
+        <sources>
+          <fieldMapping>
+            <mappings>
+              <mapping template="{00000000-0000-0000-0000-000000000000}" title="Title" summary="Summary"
+                       body="Body" meta="Author|Published Date|Topics" />
+            </mappings>
+          </fieldMapping>
+        </sources>
+      </sourceList>
+    </markdownForAI>
+    -->
+  </sitecore>
+</configuration>

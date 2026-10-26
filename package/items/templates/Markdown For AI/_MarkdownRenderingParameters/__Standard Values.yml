@@ -1,0 +1,13 @@
+---
+ID: "0239f54c-4440-4d3d-b52b-f12bfa41955d"
+Parent: "79c0afaf-6c18-4668-8f26-44707f0980a8"
+Template: "79c0afaf-6c18-4668-8f26-44707f0980a8"
+Path: /sitecore/templates/Modules/Markdown For AI/_MarkdownRenderingParameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261026T000000Z

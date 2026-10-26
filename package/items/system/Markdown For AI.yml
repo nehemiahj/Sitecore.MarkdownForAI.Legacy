@@ -1,0 +1,13 @@
+---
+ID: "e9f3fd1e-dea0-41c6-817a-b84ce1917ec4"
+Parent: "08477468-d438-43d4-9d6a-6d84a611971c"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/system/Modules/Markdown For AI
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261026T000000Z

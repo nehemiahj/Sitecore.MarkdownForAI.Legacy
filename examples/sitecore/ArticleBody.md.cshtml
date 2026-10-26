@@ -1,0 +1,22 @@
+@*
+    Example Markdown view. Place it next to ArticleBody.cshtml; on Markdown requests
+    Sitecore.MarkdownForAI uses it instead, with the same model. Output is passed through
+    as written (HTML-decoded and dedented), so write Markdown, not HTML. Use
+    Html.ToMarkdown for rich text fields so links are expanded and converted.
+*@
+@using Sitecore.MarkdownForAI.Html
+@using Sitecore.Mvc
+@model Sitecore.Mvc.Presentation.RenderingModel
+@{
+    var item = Model.Item;
+}
+# @item["Title"]
+
+@item["Summary"]
+
+@Html.ToMarkdown(Html.Sitecore().Field("Body").ToString())
+
+@if (!string.IsNullOrEmpty(item["Author"]))
+{
+@:*Reviewed by @item["Author"]*
+}

@@ -1,0 +1,13 @@
+---
+ID: "9497d868-2ded-444a-b0bf-05ba2a2a8666"
+Parent: "5df73228-24f4-4350-852d-169d884ffa28"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Modules/Markdown For AI/_LlmsPage/LLMs
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20261026T000000Z
